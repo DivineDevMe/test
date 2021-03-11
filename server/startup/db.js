@@ -19,7 +19,7 @@ const logger = createLogger({
 });
 
 module.exports = function(){
-        mongoose.connect('mongodb://localhost/testdb',{
+        mongoose.connect('mongodb+srv://tibhiri:e4c3lW2mUAiyPprW@ruvavidly.m3qpm.mongodb.net/testHeroku?retryWrites=true&w=majority',{
             useNewUrlParser: true,
             useUnifiedTopology:true,
             useCreateIndex: false,
