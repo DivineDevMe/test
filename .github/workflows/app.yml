@@ -12,5 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Deploy backend to Heroku
-        run: git push https://heroku:${{secrets.HEROKU_API_TOKEN}}@git.heroku.com/${{secrets.HEROKU_BACKEND_APP_NAME}}.git :refs/head/master --force
+      - name: Login to heroku Container registry
+        env: 
+          HEROKU_API_TOKEN: ${{secrets.HEROKU_API_TOKEN}}
+        run: heroku container:login
+      
