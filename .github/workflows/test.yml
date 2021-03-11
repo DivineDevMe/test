@@ -6,7 +6,7 @@ on:
         -master
       paths:
         -"/**"
-        -".github/workflows/backend.yml"
+        -".github/workflows/test.yml"
 
 jobs:
   build:       
