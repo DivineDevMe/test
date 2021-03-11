@@ -7,6 +7,9 @@ on:
       paths:
         -"server/**"
         -".github/workflows/app.yml"
+defaults:
+   run:
+      working-directory: server
        
 jobs:
   build:       
