@@ -17,7 +17,6 @@ router.post('/',async (req,res)=>{
     if(!usr) return res.status(400).send('Users not saved');
 
     res.send(usr);
-
 });
 
 router.put('/:id',(req,res) => {
